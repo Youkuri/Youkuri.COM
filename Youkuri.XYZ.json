@@ -10,29 +10,29 @@
     "adaptGameResolutionAtRuntime": true,
     "antialiasingMode": "MSAA",
     "antialisingEnabledOnMobile": false,
-    "folderProject": false,
+    "folderProject": true,
     "orientation": "default",
     "packageName": "com.example.gamename",
-    "pixelsRounding": true,
+    "pixelsRounding": false,
     "projectUuid": "19a55e0b-9740-499f-a05c-bd874e63fab1",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Youkuri.XYZ",
-    "description": "",
+    "description": "Hub for the website",
     "author": "",
     "windowWidth": 240,
     "windowHeight": 160,
-    "latestCompilationDirectory": "",
+    "latestCompilationDirectory": "C:\\Users\\Andres pineda\\Documents\\GDevelop Builds\\Youkuri.XYZ",
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
     "platformSpecificAssets": {},
     "loadingScreen": {
-      "backgroundColor": 0,
-      "backgroundFadeInDuration": 0.2,
+      "backgroundColor": 2565942,
+      "backgroundFadeInDuration": 0,
       "backgroundImageResourceName": "",
       "gdevelopLogoStyle": "light",
       "logoAndProgressFadeInDuration": 0.2,
@@ -43,15 +43,19 @@
       "progressBarMaxWidth": 200,
       "progressBarMinWidth": 40,
       "progressBarWidthPercent": 30,
-      "showGDevelopSplash": true,
-      "showProgressBar": true
+      "showGDevelopSplash": false,
+      "showProgressBar": false
     },
     "watermark": {
       "placement": "bottom-left",
-      "showWatermark": true
+      "showWatermark": false
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "dKospqZWwvSVoNKgcjNT3PYs6Q72"
+    ],
+    "authorUsernames": [
+      "Youkuri"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],
@@ -63,7 +67,45 @@
     "currentPlatform": "GDevelop JS platform"
   },
   "resources": {
-    "resources": [],
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Caret1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Caret1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Caret2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Caret2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/WIP.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\WIP.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/Pier Walk.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\Pier Walk.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      }
+    ],
     "resourceFolders": []
   },
   "objects": [],
@@ -72,7 +114,12 @@
   },
   "objectsGroups": [],
   "variables": [],
-  "layouts": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/splashscreen"
+    }
+  ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [],
   "externalLayouts": [],
