@@ -1,37 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+
         <title>Youkuri (dot) com!</title>
+
         <!--Embed content-->
+
         <meta property="og:title" content="Youkuri (dot) com">
         <meta property="og:description" content="Youkuri's page! It has games and it's red, so cool!">
         <meta property="og:url" content="https://www.youkuri.com/">
         <meta property="og:image" content="/images/favicon.png">
         <meta property="theme-color" content="#ffb5b5">
+
         <!--Page thingies-->
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/style.css">
         <link rel="icon" href="/images/favicon.ico">
+
     </head>
 
     <body>
+
         <div id="background"></div>
+
         <div class="container">
+
             <div class="top-bar">
+
                 <nav>
-                    <a href="#"><img class="logo hoverable" src="/images/logo.png"></a>
+
+                    <a href="#home"><img id="home-btn" class="logo hoverable btn" src="/images/logo.png"></a>
+
                     <ul>
-                        <li class="hoverable" ><a href="#">Games</a></li>
-                        <li class="hoverable" ><a href="#">Games</a></li>
-                        <li class="hoverable" ><a href="#">Games</a></li>
+                        <li class="hoverable btn"><a id="works-btn" href="#works">Works</a></li>
+                        <li class="hoverable btn"><a id="games-btn" href="#games">Games</a></li>
+                        <li class="hoverable btn"><a id="contact-btn" href="#contact">Contact</a></li>
                     </ul>
+
                 </nav>
+
             </div>
+
         </div>
-        <div class="game">
-            <iframe id="game_drop"
+
+        <div id="home" class="tab-content" style="display: none">
+            <h1>Is this something else, aint it?</h1>
+        </div>
+
+        <div id="works" class="tab-content" style="display: none">
+
+        </div>
+
+        <div id="games" class="tab-content" style="display: none">
+
+        </div>
+
+        <div id="contact" class="tab-content" style="display: none">
+
+        </div>
+
+        <div id="play" class="tab-content" style="display: none">
+            <iframe id="game-frame"
                 frameborder="0"
                 allowfullscreen="true"
                 scrolling="no"
@@ -39,8 +71,12 @@
                 webkitallowfullscreen="true"
                 mozallowfullscreen="true"
                 msallowfullscreen="true"
-                src="https://html-classic.itch.zone/html/4549124/Snowman On Track/index.html"
+                src=""
                 allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated">Couldn't load the IFrame</iframe>
         </div>
+
+        <script src="/main.js"></script>
+
     </body>
+
 </html>

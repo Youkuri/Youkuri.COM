@@ -33,7 +33,7 @@ body {
     transform: scale(1.15);
 }
 
-.game {
+#play {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@ body {
     height: 100vh;
 }
 
-.game iframe {
+#game-frame {
     height: 80vh;
     aspect-ratio: 16 / 9;
 }
