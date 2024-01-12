@@ -11,8 +11,6 @@ function changeTab(tab) {
         }
     });
 
-    window.location.href = tab
-
     currentFrame.style.display = 'flex';
     currentFrame.classList.add('active');
 
