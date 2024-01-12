@@ -11,19 +11,23 @@ function changeTab(tab) {
         }
     });
 
+    window.location.href = tab
+
     currentFrame.style.display = 'flex';
     currentFrame.classList.add('active');
 
-    if ( tab.search('#play') > 0 ) {
+    if ( tab.search('#play') >= 0 ) {
         var game = tab.split('=')[1]
         
         switch (game)
         {
-            case 'snowman-on-track':
+            case 'snowman_on_track':
                 changeGame('https://html-classic.itch.zone/html/4549124/Snowman%20On%20Track/index.html');
+                console.log("this is supposed to be snowman on track", game)
                 break;
-            case 'remilias-halloween-prank':
+            case 'remilias_halloween_prank':
                 changeGame('https://html-classic.itch.zone/html/6705388/Jam%20Version/index.html');
+                console.log("this is supposed to be remi's game", game)
                 break;
             default:
                 changeTab('#games');
@@ -46,12 +50,13 @@ function clicked(e) {
 }
 
 function changeGame(url) {
-    document.getElementById('game-frame').src = url;
+    var gameFrame = document.getElementById('game-frame');
+    gameFrame.src = url;
 }
 
 window.onload = checkUrl();
 
-var btns = document.querySelectorAll('.btn');
+var btns = document.querySelectorAll('.nav-btn');
 
 btns.forEach( btn => {
     btn.addEventListener('click', clicked);
